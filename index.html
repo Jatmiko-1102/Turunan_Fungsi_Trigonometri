@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flappy Pon | Turunan Fungsi Trigonometri</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Game Edukatif Matematika</p>
+          <h1>Flappy Pon</h1>
+        </div>
+        <div class="score-panel">
+          <div class="score-box">
+            <span>Tiang</span>
+            <strong id="pipeScore">0</strong>
+          </div>
+          <div class="score-box">
+            <span>Benar</span>
+            <strong id="quizScore">0</strong>
+          </div>
+        </div>
+      </header>
+
+      <main class="game-area">
+        <canvas id="gameCanvas" width="900" height="500"></canvas>
+
+        <div id="startOverlay" class="overlay visible">
+          <div class="panel">
+            <p class="eyebrow">Turunan Fungsi Trigonometri</p>
+            <h2>Siapkah kamu jadi master turunan?</h2>
+            <p>
+              Terbanglah melewati tiang dan jawab soal pilihan ganda saat kamu menabrak.
+            </p>
+            <ul>
+              <li>Tekan Spasi atau klik layar untuk mengepak.</li>
+              <li>Loloskan tiang sebanyak mungkin.</li>
+              <li>Jawab benar agar skor kamu makin tinggi.</li>
+            </ul>
+            <button id="startButton">Mulai Game</button>
+          </div>
+        </div>
+
+        <div id="questionOverlay" class="overlay hidden">
+          <div class="panel question-panel">
+            <p class="eyebrow">Soal Turunan Trigonometri</p>
+            <h3 id="questionText">Pertanyaan</h3>
+            <div id="optionsContainer" class="options"></div>
+          </div>
+        </div>
+
+        <div id="resultOverlay" class="overlay hidden">
+          <div class="panel result-panel">
+            <p class="eyebrow">Hasil Akhir</p>
+            <h3 id="resultTitle">Game Selesai</h3>
+            <p id="resultText"></p>
+            <button id="restartButton">Main Lagi</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
